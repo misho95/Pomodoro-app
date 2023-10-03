@@ -14,6 +14,11 @@ function App() {
   const [stroke, setStroke] = useState(full);
   const [play, setPlay] = useState(false);
 
+  const setActiveButton = (id: number) => {
+    setActive(id);
+    setPlay(false);
+  };
+
   useEffect(() => {
     const oneStroke = deplet / initalTime[active];
     const calc = initalTime[active] - (initalTime[active] - time);
@@ -67,21 +72,21 @@ function App() {
               id={0}
               text={"pomodoro"}
               active={active}
-              setActive={setActive}
+              setActive={setActiveButton}
               color={color}
             />
             <Button
               id={1}
               text={"short break"}
               active={active}
-              setActive={setActive}
+              setActive={setActiveButton}
               color={color}
             />
             <Button
               id={2}
               text={"long break"}
               active={active}
-              setActive={setActive}
+              setActive={setActiveButton}
               color={color}
             />
           </div>
