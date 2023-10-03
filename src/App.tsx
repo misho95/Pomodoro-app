@@ -42,8 +42,9 @@ function App() {
   }, [time, play]);
 
   useEffect(() => {
+    setPlay(false);
     setTime(initalTime[active]);
-  }, [active]);
+  }, [active, initalTime]);
 
   return (
     <div
@@ -126,7 +127,10 @@ function App() {
             </div>
           </div>
           <button
-            onClick={() => setShow(!show)}
+            onClick={() => {
+              setShow(!show);
+              setPlay(false);
+            }}
             className="text-neutral-500 hover:text-neutral-400"
           >
             <span className="material-symbols-outlined text-4xl select-none">
