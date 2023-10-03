@@ -91,7 +91,7 @@ function App() {
               color={color}
             />
           </div>
-          <div className=" bg-neutral-800 p-4 w-80 h-80 rounded-full">
+          <div className="bg-gradient-to-tl from-neutral-800 to-neutral-950  p-4 w-80 h-80 rounded-full">
             <div className="w-72 h-72 relative">
               <svg viewBox="0 0 100 100" className="absolute w-full h-full">
                 <circle
