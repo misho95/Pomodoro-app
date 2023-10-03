@@ -36,8 +36,8 @@ const Modal = ({
   };
 
   return (
-    <div className="bg-black/50 fixed top-0 left-0 z-50 w-full h-screen flex justify-center items-center">
-      <div className="w-w500 h-fit py-5 bg-neutral-100 rounded-lg flex flex-col">
+    <div className="bg-black/50 fixed top-0 left-0 z-50 w-full min-h-screen flex justify-center items-center">
+      <div className="w-11/12 md:w-w500 h-fit py-5 bg-neutral-100 rounded-lg flex flex-col">
         <div className="w-full flex justify-between px-5 pb-6 pt-3 border-b-px1 border-neutral-400 select-none">
           <h1 className="text-xl font-semibold">Settings</h1>
           <button onClick={() => setShow(false)}>X</button>

@@ -63,8 +63,8 @@ function App() {
           setInitialTime={setInitialTime}
         />
       )}
-      <div className="flex justify-center items-center w-full h-screen bg-neutral-900">
-        <div className="w-w500 h-fit flex flex-col items-center gap-10">
+      <div className="flex justify-center items-center w-full min-h-screen bg-neutral-900">
+        <div className="w-11/12 md:w-w500 h-fit flex flex-col items-center gap-10">
           <h1 className="text-5xl text-neutral-400 select-none font-semibold">
             pomodoro
           </h1>
